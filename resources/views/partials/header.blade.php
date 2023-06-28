@@ -1,7 +1,24 @@
 <header class="p-3">
-    <img class="logo" src="{{ Vite::asset('resources/img/logo.png') }}" alt="Laravel Logo">
+    {{-- <img class="logo" src="{{ Vite::asset('resources/img/logo.png') }}" alt="Laravel Logo">
     <span>Some links: </span>
     @foreach ($links as $link)
         <a href="{{ $link['href'] }}">{{ $link['text'] }}</a>
-    @endforeach
+    @endforeach --}}
+    <nav class="navbar bg-primary navbar-expand-lg rounded" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Laravel Movies</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    @foreach ($links as $link)
+                        <li class="nav-item">
+                            <a class="nav-link active" href="{{ $link['href'] }}">{{ $link['text'] }}</a>
+                        </li>
+                    @endforeach
+                </ul>
+            </div>
+        </div>
+    </nav>
 </header>

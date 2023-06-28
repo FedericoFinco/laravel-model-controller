@@ -4,15 +4,15 @@ return [
     'someLinks' => [
         [
             "href" => "/",
-            "text" => "Home Page",
+            "text" => "Film List",
         ],
         [
             "href" => "/otherpage",
-            "text" => "Other Page",
+            "text" => "PopCorns",
         ],
         [
             "href" => "https://laravel.com/docs/9.x",
-            "text" => "Documentation",
+            "text" => "Beverage Dispenser",
         ]
     ],
     'someOtherData' => [ 42, 37, 73],

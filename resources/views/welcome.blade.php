@@ -7,6 +7,8 @@
             <div class="col-4 p-3">
                 <div class="card">
                     <div class="card-body">
+                        <h2 class="card-title"> image:</h2>
+                        <img src="https://www.clipartmax.com/png/middle/265-2655834_work-in-progress-icon.png" alt="">
                         <h2 class="card-title">{{ $movie->title }}</h2>
                         <h3 class="card-text">{{ $movie->original_title }}</h3>
                         <h4>{{ $movie->date }}</h4>
